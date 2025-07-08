@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=JetBrains Mono');
 body {
-    /* linear-gradient(rgb(52, 47, 69),rgb(46, 41, 61) */
     background-image: White;
     min-height: 100vh;
-    
     font-family: 'JetBrains Mono',Verdana, Geneva, Tahoma, sans-serif;
     /* font-family: Merriweather,Georgia,serif; */
-    /* overflow: hidden; */
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 h1 {
@@ -32,6 +34,8 @@ h3 {
     text-align: center;
     color: black;
     font-size: 35px; 
+    opacity: 0;
+    animation: fadeIn 1s forwards;
 }
 
 section {
@@ -40,9 +44,9 @@ section {
     justify-content: center;
     position: relative;
     min-height: 60vh;
-    width: 40vw;
+    max-height: 80vh;
+    width: 45vw;
     border: 8px;
-    /* border-radius: 8%; */
     margin: 0 auto;
     text-align: center;
     vertical-align: middle;

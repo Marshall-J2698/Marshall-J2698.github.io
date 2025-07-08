@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=JetBrains Mono');
+body {
+    background-image: White;
+    min-height: 100vh;
+    font-family: 'JetBrains Mono',Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Merriweather,Georgia,serif; */
+    /* overflow: hidden; */
+    /* scrollbar-width: none; */
+    
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+.biz-card p{
+    margin: 0 auto;
+}
+
+.header{
+    overflow: hidden;
+    padding: 20px 10px;
+}
+
+.header-right{
+    text-align: right;
+}
+
+.header a {
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.header a:hover{
+    background-color: rgba(0, 128, 128,.2);
+}
+
+.biz-card {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    width: 60vw;
+    margin: 0 auto;
+    /* font-size: 30px; */
+    /* padding: 10px; */
+	height:80vh;
+	align-items:center;
+}
+
+.biz-card .biz-image {
+    float: left;
+    object-fit: contain;
+    border-radius: 50%;
+    padding: 3vw;
+    /* max-height: 60vh; */
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+}
+
+.p .responsive-text {
+    flex:1;
+    overflow-y: auto;
+    font-size: clamp(10px, 4vw, 30px);
+}
+
+@media (max-width: 768px) {
+    .biz-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .responsive-text {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+}
