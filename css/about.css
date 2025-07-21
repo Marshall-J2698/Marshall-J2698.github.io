@@ -4,9 +4,6 @@ body {
     min-height: 100vh;
     font-family: 'JetBrains Mono',Verdana, Geneva, Tahoma, sans-serif;
     /* font-family: Merriweather,Georgia,serif; */
-    /* overflow: hidden; */
-    /* scrollbar-width: none; */
-    
 }
 
 ::-webkit-scrollbar {
@@ -50,18 +47,22 @@ body {
     justify-content: center;
     width: 60vw;
     margin: 0 auto;
-    /* font-size: 30px; */
-    /* padding: 10px; */
 	height:80vh;
 	align-items:center;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
 }
+@keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
 
 .biz-card .biz-image {
     float: left;
     object-fit: contain;
     border-radius: 50%;
     padding: 3vw;
-    /* max-height: 60vh; */
     width: 100%;
     height: auto;
     max-width: 250px;

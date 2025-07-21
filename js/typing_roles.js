@@ -1,10 +1,10 @@
 // if the character is equal to _, delete instead of typing
 // if the character is equal to *, pause instead
 
-var txt = "***_*_**An aspiring chemist***_______developer*****_________engineer**________maker";
+var txt = "***_*_**An as*pirin*g chemist***_______d*e*ve*loper*****_________eng*inee***___**____make*r*";
 
-var startDelay = 2250;
-var typeSpeed = 65;
+var startDelay = 1800;
+var typeSpeed = 55;
 
 function typeAndDelete(element,text){
     element.style.opacity = "100%";
@@ -44,11 +44,9 @@ function blinkCursor(element){
         }else {
             element.innerHTML += '|';
         }
-        // console.log("haiiii");
     },500);
 
 }
 
 setTimeout(() => typeAndDelete(document.getElementById("demo"),txt), startDelay);
-// setTimeout(() => blinkCursor(document.getElementById("demo")),startDelay+500+txt.length * typeSpeed);
 
