@@ -59,9 +59,8 @@ section {
 }
 
 section img {
-   
     width: 6em;
-    max-width: 300px; 
+    max-width: 100%; 
     height: auto;
 }
 
