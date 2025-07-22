@@ -68,20 +68,29 @@ body {
     max-width: 250px;
 }
 
-.p .responsive-text {
-    flex:1;
+.biz-card .responsive-text {
+    flex: 1;
     overflow-y: auto;
-    font-size: clamp(10px, 4vw, 30px);
+    /* font-size: clamp(12px, 3vw, 24px);  */
+    min-width: 0; 
+    font-size: clamp(.5em, 1.5vw, 4em);
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    hyphens: auto; 
+    padding-left: 20px; 
+    max-width: 100%; 
 }
 
 @media (max-width: 768px) {
     .biz-card {
         flex-direction: column;
         text-align: center;
+        width: 95vw; /* Use more screen width on mobile */
+        padding: 10px;
     }
     
-    .responsive-text {
-        padding-left: 0;
-        padding-top: 20px;
+    .biz-card .biz-image {
+        padding: 2vw; /* Reduce image padding on mobile */
+        max-width: 200px; /* Smaller image on mobile */
     }
 }

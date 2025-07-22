@@ -40,21 +40,45 @@ h3 {
 
 section {
     display: flex;
-    place-items: center;
+    align-items: center;
     justify-content: center;
     position: relative;
-    min-height: 60vh;
-    max-height: 80vh;
+    /* min-height: 60vh; */
+    max-height: 50vh;
     width: 45vw;
     border: 8px;
     margin: 0 auto;
     text-align: center;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     background-color: #598381;
-    font-size: 25px;
-    padding: 10px;
+    /* font-size: 25px; */
+    font-size: clamp(.5em, 1.5vw, 2em);
+    padding: 20px;
     transition: box-shadow 0.05s linear;
     transition: transform .05s linear;
+}
+
+section img {
+    width: 80%;
+  max-width: 300px; 
+  height: auto;
+}
+
+section p {
+    margin: 0; 
+    text-align: center ;
+    flex: 1;  
+    display: flex;  
+    align-items: center;  
+    
+}
+
+section p a {
+    margin: 0; 
+    text-align: center ;
+    flex: 1;  
+    display: flex;  
+    align-items: center;  
 }
 
 section:hover {
