@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=JetBrains Mono');
+body {
+    background-image: White;
+    min-height: 100vh;
+    font-family: 'JetBrains Mono',Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Merriweather,Georgia,serif; */
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent;  
+}
+
+h1 {
+    text-align: center;
+    color:black;
+    font-size: 50px;
+
+}
+
+h2 {
+    color: black;
+    font-size: 25px; 
+}
+
+
+
+
+
+
+.header{
+    overflow: hidden;
+    padding: 20px 10px;
+}
+
+.header-right{
+    text-align: right;
+}
+
+.header a {
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.header a:hover{
+    background-color: rgba(0, 128, 128,.2);
+}
+
+#posts-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.post-entry {
+    margin-bottom: 2em;
+}
+
+.post-title {
+    font-size: 1.4em;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.post-title:hover {
+    color: #598381;
+}
+
+.post-date {
+    display: block;
+    color: #666;
+    font-size: 0.9em;
+    margin: 0.3em 0;
+}
+
+.post-description {
+    margin: 0.5em 0 0 0;
+    color: #333;
+}
